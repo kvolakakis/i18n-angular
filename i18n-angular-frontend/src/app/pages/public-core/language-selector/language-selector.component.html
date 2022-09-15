@@ -1,0 +1,11 @@
+<div class="dropdown">
+  <button class="btn dropdown-toggle text-uppercase" type="button" id="dropdownMenuButton"
+    [ngClass]="(theme==='light')?'btn-outline-white':'btn-outline-grey' " data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+    {{language?.lang}}
+  </button>
+  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+    <a *ngFor="let language of languages" class="dropdown-item" (click)="setLanguage(language.lang)"
+      [ngClass]="{ 'font-bold': language.active }">{{language.name}}</a>
+  </div>
+</div>

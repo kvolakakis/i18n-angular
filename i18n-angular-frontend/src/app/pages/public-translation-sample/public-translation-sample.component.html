@@ -1,0 +1,23 @@
+<div class="container">
+  <!-- Translation from JSON -->
+  <h3 class="text-center">
+    {{ "PUBLIC.TRANSLATION_SAMPLE.INTERNATIONALIZATION" | translate }}
+  </h3>
+  <div class="intro-placeholder mt-3 p-3">{{'PUBLIC.TRANSLATION_SAMPLE.INTRO' | translate}}</div>
+
+  <!-- Translation from TS object -->
+  <div class="intro-placeholder mt-3 p-3"> {{ sampleTextOut[selectedLang] }}</div>
+
+  <!-- Translation from backend JSON object -->
+  <!-- <div *ngIf="canViewPosts()" class="post-container px-3 pt-3 pb-3 mt-4">
+    <div class="d-flex justify-content-between">
+      <h5>{{ "PUBLIC.POSTS.FROM_USER" | translate }}: {{ samplePost?.createdBy.fullName }}</h5>
+    </div>
+    <div class="content mb-3">
+      {{ samplePost?.content[selectedLang] }}
+    </div>
+    <div class="creation-date text-muted">
+      <i>{{ samplePost?.createdAt }}</i>
+    </div>
+  </div> -->
+</div>
