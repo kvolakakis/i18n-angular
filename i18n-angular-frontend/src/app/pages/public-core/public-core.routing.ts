@@ -10,6 +10,10 @@ const routes: Routes = [
       {
         path: 'translation-sample',
         loadChildren: () => import('../public-translation-sample/public-translation-sample.module').then((m) => m.PublicTranslationSampleModule),
+      },
+      {
+        path: '',
+        loadChildren: () => import('../public-home/public-home.module').then((m) => m.PublicHomeModule),
       }
     ],
   },

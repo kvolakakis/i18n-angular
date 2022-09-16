@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./public-core.component.scss'],
 })
 export class PublicCoreComponent implements OnInit {
-  public isLoggedIn!: boolean;
   constructor() {
 
   }

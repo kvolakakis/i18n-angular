@@ -1,5 +1,5 @@
 <div class="container">
-  <!-- Translation from JSON -->
+  <!-- Translation from static files in JSON or TS (check 'src/app/global/i18n') -->
   <h3 class="text-center">
     {{ "PUBLIC.TRANSLATION_SAMPLE.INTERNATIONALIZATION" | translate }}
   </h3>
@@ -9,7 +9,7 @@
   <div class="intro-placeholder mt-3 p-3"> {{ sampleTextOut[selectedLang] }}</div>
 
   <!-- Translation from backend JSON object -->
-  <!-- <div *ngIf="canViewPosts()" class="post-container px-3 pt-3 pb-3 mt-4">
+  <div class="post-container px-3 pt-3 pb-3 mt-4">
     <div class="d-flex justify-content-between">
       <h5>{{ "PUBLIC.POSTS.FROM_USER" | translate }}: {{ samplePost?.createdBy.fullName }}</h5>
     </div>
@@ -19,5 +19,5 @@
     <div class="creation-date text-muted">
       <i>{{ samplePost?.createdAt }}</i>
     </div>
-  </div> -->
+  </div>
 </div>

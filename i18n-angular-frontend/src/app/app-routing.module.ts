@@ -6,7 +6,7 @@ const routes: Routes = [
     path: '',
     children: [
       {
-        path: 'core',
+        path: '',
         loadChildren: () =>
           import('./pages/public-core/public-core.module').then((m) => m.PublicCoreModule),
       },
