@@ -14,9 +14,8 @@ export const locale = {
         ENGLISH: 'English',
       },
       HOME: {
-        INTRO: 'This is random content that is used just for placeholding purposes and it is visible to any logged in user.',
-        WELCOME: 'Welcome',
-        NON_LOGGED_INTRO: 'Please Login or Register to get access to this page.'
+        INTRO: 'This is random content that is used just for placeholding purposes and to demonstrate how internationalization works.',
+        WELCOME: 'Welcome'
       },
       TRANSLATION_SAMPLE: {
         INTERNATIONALIZATION: 'Internationalization',
